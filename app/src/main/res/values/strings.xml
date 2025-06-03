@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DACS3</string>
+    <string-array name="spinner_options">
+        <item>Xe buýt</item>
+        <item>Taxi</item>
+        <item>Thuê xe máy - oto</item>
+    </string-array>
+</resources>

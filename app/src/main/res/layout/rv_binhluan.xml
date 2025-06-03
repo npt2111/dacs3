@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_blUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/usernameBL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/img_blUser"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/binhluanUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bình luận"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/img_blUser"
+            android:layout_below="@id/usernameBL"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

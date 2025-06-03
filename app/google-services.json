@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "407765160011",
+    "firebase_url": "https://dacs3-b06d5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dacs3-b06d5",
+    "storage_bucket": "dacs3-b06d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407765160011:android:6dbc31f11a28c8030d7dce",
+        "android_client_info": {
+          "package_name": "com.example.dacs3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2SxOoIqrN1v_VYGOf_HEnixL2RIXK1oM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

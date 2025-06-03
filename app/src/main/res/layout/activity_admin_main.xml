@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AdminMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/backpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_arrow_back_24"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quản lý dữ liệu"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25dp"
+                    />
+            </LinearLayout>
+
+
+
+            <!--Toolbar-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_dichuyen_button"
+                        android:layout_margin="20dp"
+                        android:padding="40dp">
+                        <LinearLayout
+                            android:id="@+id/dm_amthuc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ic_amthuc"
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_food" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dl_amthuc"
+                                android:layout_alignStart="@+id/ic_food"
+                                android:layout_marginStart="20dp"
+                                android:text="Ẩm thực"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/dm_amthuc"
+                            android:background="@android:color/darker_gray"
+                            android:id="@+id/divider_food"
+                            />
+                        <LinearLayout
+                            android:id="@+id/dm_dulich"
+                            android:layout_below="@id/divider_food"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/ic_travel"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_travel"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dl_travel"
+                                android:layout_alignStart="@+id/ic_travel"
+                                android:layout_marginStart="20dp"
+                                android:text="Du lịch"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_below="@id/divider_food"
+                                />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/dm_dulich"
+                            android:background="@android:color/darker_gray"
+                            android:id="@+id/divider_travel"
+                            />
+                        <LinearLayout
+                            android:id="@+id/dm_dichuyen"
+                            android:layout_below="@id/divider_travel"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/ic_train"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_train"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dl_dichuyen"
+                                android:layout_alignStart="@+id/ic_train"
+                                android:layout_marginStart="20dp"
+                                android:text="Di chuyển"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_below="@id/divider_travel"
+                                />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/dm_dichuyen"
+                            android:background="@android:color/darker_gray"
+                            android:id="@+id/divider_dichuyen"
+                            />
+                        <LinearLayout
+                            android:id="@+id/dm_diadiem"
+                            android:layout_below="@+id/divider_dichuyen"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/ic_map"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/in_map"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dl_diadiem"
+                                android:layout_alignStart="@+id/ic_map"
+                                android:layout_marginStart="20dp"
+                                android:text="Địa điểm"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/dm_diadiem"
+                            android:background="@android:color/darker_gray"
+                            android:id="@+id/divider_diadiem"
+                            />
+                        <LinearLayout
+                            android:id="@+id/dm_nguoidung"
+                            android:layout_below="@+id/divider_diadiem"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/ic_avt"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_user"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dl_nguoidung"
+                                android:layout_alignStart="@+id/ic_map"
+                                android:layout_marginStart="20dp"
+                                android:text="Tài khoản người dùng"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
